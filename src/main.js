@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import './plugins/vuetify'
 import App from '@/App.vue'
+import Vuex from 'vuex'
 import router from '@/router'
 import store from '@/store'
 import * as firebase from 'firebase'
 import vuetify from './plugins/vuetify';
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
-Vue.config.productionTip = false
+Vue.use(Vuex)
 
 new Vue({
   router,
